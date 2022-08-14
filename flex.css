@@ -1,29 +1,28 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
-body{
+body {
   color: #111;
 }
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   background-color: #efefef;
 }
-.nav{
+.nav {
   display: flex;
 }
-.list-item{
+.list-item {
   margin-right: 1rem;
   text-transform: capitalize;
 }
 ul > li > a {
-text-decoration: none;
-color: #111;
+  text-decoration: none;
+  color: #111;
 }
 /* .parent{
   display: flex;
