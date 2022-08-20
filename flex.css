@@ -39,3 +39,109 @@ p{
   margin: 10px;
   color: white;
 } */
+
+/* order and flex-grow */
+.section-one {
+  display: flex;
+  margin-top: 2rem;
+  background-color: dodgerblue;
+}
+.section-one > div {
+  margin: 10px;
+  background-color: #efefef;
+  padding: 15px;
+}
+.a {
+  order: 4;
+  flex-grow: 8;
+}
+.b {
+  order: 3;
+  flex-grow: 4;
+}
+.c {
+  order: 1;
+  flex-grow: 1;
+}
+.d {
+  order: 3;
+  flex-grow: 1;
+}
+/* order and flex-grow */
+
+/* flex-shrink */
+.section-shrink {
+  display: flex;
+  margin-top: 2rem;
+  background-color: orange;
+  width: 400px;
+}
+.section-shrink > div {
+  margin: 10px;
+  background-color: #efefef;
+  padding: 15px;
+  width: 200px;
+}
+.shrink-a {
+  flex-shrink: 1;
+  flex-basis: 600px;
+}
+.shrink-b {
+  flex-shrink: 1;
+}
+.shrink-c {
+  flex-shrink: 2;
+}
+.shrink-d {
+  flex-shrink: 2;
+}
+/* flex-shrink */
+
+/* section-flex */
+.section-flex {
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgb(255, 0, 123);
+}
+.section-flex > div {
+  margin: 10px;
+  background-color: #efefef;
+  padding: 15px;
+}
+.flex-a {
+  flex: 1;
+}
+.flex-b {
+  flex: 2;
+}
+.flex-c {
+  flex: 3;
+}
+.flex-d {
+  flex: 3;
+}
+/* section-flex */
+
+.section-self{
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgb(90, 1, 96);
+  height: 200px;
+}
+.section-self > div {
+  margin: 10px;
+  background-color: #efefef;
+  padding: 15px;
+}
+.self-a{
+  align-self: flex-start;
+}
+.self-b{
+  align-self: center;
+}
+.self-c{
+  align-self: flex-end;
+}
+.self-d{
+  /* align-self: baseline; */
+}

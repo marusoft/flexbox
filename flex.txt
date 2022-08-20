@@ -2,7 +2,7 @@ FLEXBOX LAYOUT
 --------------
 The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
 
-*** FLEX CONTAINER(PARENT)
+*** FLEX CONTAINER(PARENT ELEMENT)
 --------------------------
 The flex container is the Parent Element.The flex container becomes flexible by setting the display property to flex:
 The flex container properties are:
