@@ -14,7 +14,7 @@ body {
   padding: 1rem;
   background-color: #efefef;
 }
-.logo{
+.logo {
   width: 150px;
 }
 .nav {
@@ -30,49 +30,53 @@ ul > li > a {
   font-weight: 700;
   color: purple;
 }
-a:hover{
-  border-bottom: 1px solid purple;;
+a:hover {
+  border-bottom: 1px solid purple;
 }
 
-.card{
+.card {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.carditem{
+.carditem {
   width: 300px;
   background-color: #ffffff;
   border: 1px solid #efefef;
   border-radius: 5px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   font-size: 2rem;
-  padding: 10px;
   color: #111;
   margin: 10px;
 }
-.flower{
-  width: 270px;
-  height: 70px;
+.flower {
+  width: 300px;
+  height: 150px;
   object-fit: cover;
 }
+.desc {
+  padding: 10px;
+}
 .desc p {
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 2px 0px;
   margin: 2px;
 }
-.card-footer{
+.card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: .9rem;
+  margin-top: 0.9rem;
+  padding: 10px;
 }
-.icon > .fa-heart{
-  margin-right:5px;
+.icon > .fa-heart {
+  margin-right: 5px;
 }
-.fa{
+.fa {
   font-size: 1.1rem;
   cursor: pointer;
-  color: #ddd;
+  color: rgb(134, 128, 128);
   font-weight: 900;
 }
