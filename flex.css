@@ -142,6 +142,6 @@ p{
 .self-c{
   align-self: flex-end;
 }
-.self-d{
-  /* align-self: baseline; */
-}
+/* .self-d{
+  align-self: baseline;
+} */

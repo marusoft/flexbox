@@ -10,8 +10,12 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   background-color: #efefef;
+}
+.logo{
+  width: 150px;
 }
 .nav {
   display: flex;
@@ -22,7 +26,12 @@ body {
 }
 ul > li > a {
   text-decoration: none;
-  color: #111;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: purple;
+}
+a:hover{
+  border-bottom: 1px solid purple;;
 }
 
 .card{
@@ -41,4 +50,29 @@ ul > li > a {
   padding: 10px;
   color: #111;
   margin: 10px;
+}
+.flower{
+  width: 270px;
+  height: 70px;
+  object-fit: cover;
+}
+.desc p {
+  font-size: .9rem;
+  padding: 2px 0px;
+  margin: 2px;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .9rem;
+}
+.icon > .fa-heart{
+  margin-right:5px;
+}
+.fa{
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #ddd;
+  font-weight: 900;
 }
