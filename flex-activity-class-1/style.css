@@ -5,10 +5,9 @@
 }
 a{
   text-decoration: none;
+  color: blue;
 }
-img{
-  max-width: 50px;
-}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -16,62 +15,65 @@ img{
   min-height: 80vh;
 }
 .container {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 2rem;
 }
 .title{
   margin-bottom: .6rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .inputs {
   display: flex;
   flex-direction: column;
   margin-bottom: .5rem;
 }
-input{
-  padding: .2rem;
+label{
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
 }
-/* .forgot{
-  font-size: .8rem;
-  text-decoration: none;
-  color: blue;
-} */
+input{
+  padding: .9rem;
+}
+.forgot{
+  font-size: 1.3rem;
+}
 .btn{
-  padding: 5px 8px;
+  padding: 10px 15px;
   color: #fff;
-  background-color: rgb(102, 40, 164);
+  background-color: rgb(26, 35, 213);
   border: none;
   border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .btn-wrapper{
   margin-top: .5rem;
 }
 .or{
-  font-size: .7rem;
-  margin: 0.3rem 0rem;
+  font-size: 1.3rem;
+  margin: 0.7rem 0rem;
 }
 .social-icon{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .list{
   list-style: none;
   display: flex;
-  gap: 2.5rem;
+  gap: .8rem;
 }
 .list-item{
-  border: 1.5px solid grey;
-  padding: .5rem .7rem;
+  border: 2px solid grey;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
 }
 .account{
   text-align: center;
-  font-size: .8rem;
+  font-size: 1.1rem;
 }
 .password-wrapper{
   display: flex;
   justify-content: space-between;
-}
-.forgot{
-  font-size: .8rem;
 }
 .fa-linkedin-square{
   color: rgba(7, 156, 215, 0.922);
