@@ -24,6 +24,9 @@ ul > li > a {
   text-decoration: none;
   color: #111;
 }
+.menu{
+  display: none;
+}
 /* .parent{
   display: flex;
   justify-content: space-evenly;
@@ -145,3 +148,12 @@ p{
 /* .self-d{
   align-self: baseline;
 } */
+
+@media (max-width: 480px) {
+  .nav{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+}

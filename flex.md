@@ -1,19 +1,57 @@
-FLEXBOX LAYOUT
+# FLEXBOX LAYOUT
 --------------
-The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+The Flexible Box Layout, makes it easier to design flexible responsive layout structure.
 
-*** FLEX CONTAINER(PARENT ELEMENT)
+## FLEX CONTAINER (PARENT ELEMENT)
 --------------------------
-The flex container is the Parent Element.The flex container becomes flexible by setting the display property to flex:
-The flex container properties are:
--- flex-direction
--- flex-wrap
--- flex-flow
--- justify-content
--- align-items
--- align-content
+The flex container is the Parent Element.The flex container becomes flexible by setting the display property of the parent to flex:
 
-The flex-direction Property
+The flex container properties are:
+```html
+The parent container with two direction children
+
+<div class="parent-container">
+  <div>A</div>
+  <div>B</div>
+</div>
+```
+```css
+The parent container 
+.parent-container {
+  display: flex;
+}
+```
+```css
+The flex-direction property defines in which direction the container wants to stack the flex items.
+
+flex-direction: row | column | row-revese | column-revese
+Example: 
+```
+```css
+The flex-wrap property specifies whether the flex items should wrap or not.
+flex-wrap: no-wrap | wrap | wrap-reverse
+```
+```css
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+
+flex-flow: flex-direction | flex-wrap
+```
+```css
+The justify-content property is used to align the flex items:
+
+justify-content : flex-start | flex-end | center |space-between | space-around | space-evenly
+```
+```css
+The align-items property is used to align the flex items
+align-items: baseline | center | stretch | flex-end | flex-start
+```
+```css
+The align-content property is used to align the flex lines.
+
+align-content:flex-start | flex-end | center |space-between | space-around | stretch;
+```
+
+<!-- The flex-direction Property
 ----------------------------
 The flex-direction property defines in which direction the container wants to stack the flex items.
 
@@ -28,11 +66,12 @@ The flex-flow property is a shorthand property for setting both the flex-directi
 The justify-content Property
 -----------------------------
 The justify-content property is used to align the flex items:
+
 The align-items Property
 ------------------------
-The align-items property is used to align the flex items.
+The align-items property is used to align the flex items. -->
 
-*** FLEX ITEMS(CHILD ELEMENTS)
+### FLEX ITEMS(CHILD ELEMENTS)
 ------------------------------
 The direct child elements of a flex container automatically becomes flexible (flex) items.
 The flex item properties are:

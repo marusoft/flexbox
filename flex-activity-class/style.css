@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .flex-container {
+  display: flex;
+  background-color: orange;
+  padding: 30px;
+  height: 400px;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+} */
+
+/* div.flex-item {
+  background-color: dodgerblue;
+  border: 1px solid gray;
+  padding: 1rem;
+  color: #fff;
+} */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: grey;
+  color: #fff;
+}
+.navbar h2{
+  cursor: pointer;
+}
+.list{
+  display: flex;
+  list-style: none;
+}
+.list-item{
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.list-item:hover{
+  border-bottom: 1px solid #fff;
+}
+.fa-bars{
+  display: none;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.btn-item{
+  /* margin-right: 1.5rem; */
+  padding: .7rem;
+  background-color: dodgerblue;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-item:hover{
+  background-color: orange;
+}
+
+@media (max-width: 600px) {
+  .navbar{
+    background-color: dodgerblue;
+  }
+  .list-item{
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+    font-size: 1.5rem;
+  }
+  .buttons{
+    flex-wrap: wrap;
+  }
+}
