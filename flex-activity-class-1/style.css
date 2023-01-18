@@ -1,96 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&family=Raleway:wght@100;200;300;400;600&family=Roboto:wght@400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-a{
-  text-decoration: none;
-  color: blue;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  font-family: "Alkalami", serif;
+  list-style: none;
 }
 .container {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 2rem;
-}
-.title{
-  margin-bottom: .6rem;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.inputs {
   display: flex;
-  flex-direction: column;
-  margin-bottom: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 176, 255);
+  padding: 1rem;
 }
-label{
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-input{
-  padding: .9rem;
-}
-.forgot{
-  font-size: 1.3rem;
-}
-.btn{
-  padding: 10px 15px;
+.logo {
   color: #fff;
-  background-color: rgb(26, 35, 213);
-  border: none;
-  border-radius: 3px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.nav-item {
+  /* margin-right: 1rem; */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
+.menu {
+  display: none;
+  color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
 }
-.btn-wrapper{
-  margin-top: .5rem;
+.wrapper {
+  padding: 1rem;
 }
-.or{
-  font-size: 1.3rem;
-  margin: 0.7rem 0rem;
-}
-.social-icon{
-  margin-bottom: 1.5rem;
-}
-.list{
-  list-style: none;
+/* flex container */
+.parent-container {
   display: flex;
-  gap: .8rem;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: orange;
 }
-.list-item{
-  border: 2px solid grey;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
+.chidren {
+  background-color: #efefef;
+  padding: 25px;
+  font-size: 1.5rem;
 }
-.account{
-  text-align: center;
-  font-size: 1.1rem;
-}
-.password-wrapper{
+/* flex container */
+/* flex direction */
+.row-revese {
   display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: row-reverse;
+  background-color: orange;
+}
+.column {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: orange;
+}
+.column-reverse {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: column-reverse;
+  background-color: orange;
+}
+/* flex direction */
+/* flex-wrap */
+.wrap {
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: orange;
+}
+.wrap-reverse {
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap-reverse;
+  background-color: orange;
+}
+.wrap-item {
+  padding: 20px;
+  background-color: rebeccapurple;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
+}
+/* flex-wrap */
+
+/* justify-content */
+.flex-start {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.flex-end {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* flex-direction: column; */
+  /* height: 25rem; */
+  justify-content: flex-end;
+}
+.space-between {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
-.fa-linkedin-square{
-  color: rgba(7, 156, 215, 0.922);
+.space-around {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
 }
-.fa-facebook-official{
-  color: rgba(43, 43, 205, 0.892);
+.space-evenly {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
 }
-.fa-twitter{
-  color: rgb(9, 180, 248);
+.center {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
-@media (max-width: 600px) {
-  .container{
-    margin: 1rem;
+.list-item {
+  padding: 1rem;
+  background-color: orange;
+  margin-bottom: 1rem;
+}
+/* justify-content */
+/* align-items */
+.flex-start-align {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 200px;
+  align-items: flex-start;
+}
+.flex-end-align {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* flex-direction: column; */
+  /* height: 25rem; */
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 200px;
+  align-items: flex-end;
+}
+
+.stretch-align {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 200px;
+  align-items: stretch;
+}
+.baseline-align {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 200px;
+  align-items: baseline;
+}
+.center-align {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 200px;
+  align-items: center;
+}
+/* align-items */
+
+/* align-content */
+.stretch-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 600px;
+  align-content: stretch;
+}
+.flex-start-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  align-content: flex-start;
+}
+.flex-end-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* height: 25rem; */
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 600px;
+  align-content: flex-end;
+}
+
+.space-between-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 600px;
+  align-content: space-between;
+}
+.space-around-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 600px;
+  align-content: space-around;
+}
+.space-evenly-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 600px;
+  /* align-content: ; */
+}
+.center-align-content {
+  background-color: dodgerblue;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* a 200px height is use to 
+    better illustrate align-items
+   */
+  height: 600px;
+  align-items: center;
+}
+/* align-content */
+
+.order-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.order-container > div {
+  padding: 20px;
+  background-color: rebeccapurple;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
+}
+.order-item1 {
+  order: 5;
+}
+.order-item2 {
+  order: 3;
+}
+.order-item3 {
+  order: 4;
+}
+.order-item4 {
+  order: 1;
+}
+.order-item5 {
+  order: 6;
+}
+.order-item6 {
+  order: 2;
+}
+.flex-grow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+.flex-grow-container > div {
+  padding: 20px;
+  background-color: rebeccapurple;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
+}
+.grow-item1 {
+  flex-grow: 2;
+}
+.grow-item2 {
+  flex-grow: 1;
+}
+.grow-item3 {
+  flex-grow: 3;
+}
+.grow-item4 {
+  flex-grow: 0;
+}
+.flex-shrink-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+.flex-shrink-container > div {
+  padding: 20px;
+  background-color: rebeccapurple;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
+  width: 200px;
+}
+.flex-shrink-item1 {
+  flex-shrink: 5;
+}
+.flex-shrink-item2 {
+  flex-shrink: 3;
+}
+.flex-basis-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.flex-basis-container > div {
+  padding: 20px;
+  background-color: dodgerblue;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
+}
+.flex-basis-item2 {
+  flex-basis: 300px;
+}
+.flex-container {
+  display: flex;
+  gap: 1rem;
+}
+.flex-container > div {
+  padding: 20px;
+  background-color: dodgerblue;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+  /* margin-right: 1rem; */
+}
+.flex-item2 {
+  flex: 50%;
+}
+.flex-item3 {
+  flex: 50%;
+}
+.align-self-container {
+  display: flex;
+  gap: 1rem;
+  height: 300px;
+  flex-wrap: wrap;
+  background-color: rebeccapurple;
+}
+.align-self-container > div {
+  padding: 20px;
+  background-color: dodgerblue;
+  border: 1px solid #efefef;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.align-self1 {
+  align-self: flex-end;
+}
+.align-self2 {
+  align-self: flex-start;
+}
+.align-self3 {
+  align-self: center;
+}
+.align-self4 {
+  /* default value */
+  align-self: stretch;
+}
+/* .align-self5{
+  align-self: baseline;
+} */
+
+/* centering an element */
+
+.center-container {
+  /* width: 250px; */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+.center-container > div {
+  background-color: #f1f1f1;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    /* flex-direction: column; */
   }
-  .list{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+  .nav-list {
+    display: none;
+  }
+  .nav-item {
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+  }
+  .menu {
+    display: block;
   }
 }

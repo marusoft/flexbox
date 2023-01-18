@@ -8,7 +8,7 @@ The flex container is the Parent Element.The flex container becomes flexible by 
 
 The flex container properties are:
 ```html
-The parent container with two direction children
+The parent container with two direct children
 
 <div class="parent-container">
   <div>A</div>

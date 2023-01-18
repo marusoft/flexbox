@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+}
+.title{
+  margin-bottom: .6rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+}
+label{
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+input{
+  padding: .9rem;
+}
+.forgot{
+  font-size: 1.3rem;
+}
+.btn{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: rgb(26, 35, 213);
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn-wrapper{
+  margin-top: .5rem;
+}
+.or{
+  font-size: 1.3rem;
+  margin: 0.7rem 0rem;
+}
+.social-icon{
+  margin-bottom: 1.5rem;
+}
+.list{
+  list-style: none;
+  display: flex;
+  gap: .8rem;
+}
+.list-item{
+  border: 2px solid grey;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.account{
+  text-align: center;
+  font-size: 1.1rem;
+}
+.password-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.fa-linkedin-square{
+  color: rgba(7, 156, 215, 0.922);
+}
+.fa-facebook-official{
+  color: rgba(43, 43, 205, 0.892);
+}
+.fa-twitter{
+  color: rgb(9, 180, 248);
+}
+@media (max-width: 600px) {
+  .container{
+    margin: 1rem;
+  }
+  .list{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
