@@ -221,9 +221,6 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  /* a 200px height is use to 
-    better illustrate align-items
-   */
   height: 600px;
   align-content: stretch;
 }
@@ -234,9 +231,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* a 200px height is use to 
-    better illustrate align-items
-   */
+
   align-content: flex-start;
 }
 .flex-end-align-content {
@@ -247,9 +242,6 @@
   flex-wrap: wrap;
   /* flex-direction: column; */
   /* height: 25rem; */
-  /* a 200px height is use to 
-    better illustrate align-items
-   */
   height: 600px;
   align-content: flex-end;
 }
@@ -260,9 +252,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* a 200px height is use to 
-    better illustrate align-items
-   */
   height: 600px;
   align-content: space-between;
 }
