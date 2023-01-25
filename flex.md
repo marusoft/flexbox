@@ -51,26 +51,6 @@ The align-content property is used to align the flex lines.
 align-content:flex-start | flex-end | center |space-between | space-around | stretch;
 ```
 
-<!-- The flex-direction Property
-----------------------------
-The flex-direction property defines in which direction the container wants to stack the flex items.
-
-The flex-wrap Property
------------------------
-The flex-wrap property specifies whether the flex items should wrap or not.
-
-The flex-flow Property
------------------------
-The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
-
-The justify-content Property
------------------------------
-The justify-content property is used to align the flex items:
-
-The align-items Property
-------------------------
-The align-items property is used to align the flex items. -->
-
 ### FLEX ITEMS(CHILD ELEMENTS)
 ------------------------------
 The direct child elements of a flex container automatically becomes flexible (flex) items.
