@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.order-wrapper,
+.flex-grow-wrapper,
+.flex-shrink-wrapper,
+.flex-basis-wrapper,
+.flex-wrapper,
+.alignself-wrapper,
+.center-wrapper {
+  margin: 1rem;
+}
+.order-container {
+  display: flex;
+  gap: 1rem;
+}
+.order-container > div {
+  background-color: dodgerblue;
+  border: 1px solid #efefef;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.order-items1 {
+  order: 6;
+}
+.order-items2 {
+  order: 3;
+}
+.order-items3 {
+  order: 2;
+}
+.order-items4 {
+  order: 1;
+}
+.order-items5 {
+  order: 4;
+}
+.order-items6 {
+  order: 5;
+}
+.flex-grow-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flex-grow-container > div {
+  background-color: orange;
+  border: 1px solid #efefef;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.flex-grow1 {
+  flex-grow: 3;
+}
+.flex-grow3 {
+  flex-grow: 2;
+}
+.flex-grow4 {
+  flex-grow: 4;
+}
+.flex-shrink-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flex-shrink-container > div {
+  background-color: rgb(101, 70, 11);
+  border: 1px solid #efefef;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 200px;
+}
+.flex-shrink1 {
+  flex-shrink: 5;
+}
+.flex-shrink2 {
+  flex-shrink: 4;
+}
+.flex-shrink3 {
+  flex-shrink: 3;
+}
+.flex-basis-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flex-basis-container > div {
+  background-color: rgb(78, 140, 7);
+  border: 1px solid #efefef;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.flex-basis3 {
+  flex-basis: 300px;
+}
+.flex-basis6 {
+  flex-basis: 200px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flex-container > div {
+  background-color: rgb(145, 16, 165);
+  border: 1px solid #efefef;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.flex-a {
+  flex: 50%;
+}
+.flex-b {
+  flex: 20%;
+}
+.flex-d {
+  flex: 30%;
+}
+
+.alignself-container {
+  display: flex;
+  gap: 1rem;
+  background-color: dodgerblue;
+  height: 250px;
+  padding: 1rem;
+}
+.alignself-container > div {
+  background-color: rgb(230, 20, 65);
+  border: 1px solid #efefef;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.alignself-a {
+  align-self: flex-start;
+}
+.alignself-b {
+  align-self: flex-end;
+}
+.alignself-c {
+  align-self: center;
+}
+.alignself-d {
+  align-self: stretch;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 222, 242);
+  height: 300px;
+}
+.center {
+  color: red;
+  font-size: 4rem;
+}

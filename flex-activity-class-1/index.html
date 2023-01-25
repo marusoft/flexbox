@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Class 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <i class="fa fa-home"></i>
+        LOGO
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item">About me</li>
+        <li class="nav-item">Contact me</li>
+        <li class="nav-item">Project</li>
+        <li class="nav-item">Profile</li>
+      </ul>
+      <span class="menu">
+        <i class="fa fa-bars"></i>
+      </span>
+    </div>
+    <div class="wrapper">
+      <h1>FLEX CONTAINER</h1>
+      <h3>
+        Parent Container becomes a flex container when the display property is
+        set to flex with direct chilren (display: flex). Example below is a
+        parent container with three direct children
+      </h3>
+      <div class="parent-container">
+        <div class="chidren">A</div>
+        <div class="chidren">B</div>
+        <div class="chidren">C</div>
+      </div>
+      <!-- flex-direction  -->
+      <h3>
+        The flex-direction property defines in which direction the container
+        wants to stack the flex items.
+      </h3>
+      <h3>flex-direction: row | row-revese | column | column-revese</h3>
+      <div class="row-revese">
+        <div class="chidren">A</div>
+        <div class="chidren">B</div>
+        <div class="chidren">C</div>
+      </div>
+      <div class="column">
+        <div class="chidren">A</div>
+        <div class="chidren">B</div>
+        <div class="chidren">C</div>
+      </div>
+      <div class="column-reverse">
+        <div class="chidren">A</div>
+        <div class="chidren">B</div>
+        <div class="chidren">C</div>
+      </div>
+      <!-- flex-direction  -->
+      <!-- flex-wrap  -->
+      <h3>flex-wrap: no-wrap | wrap | wrap-reverse</h3>
+      <h3>wrap</h3>
+      <div class="wrap">
+        <div class="wrap-item">A</div>
+        <div class="wrap-item">B</div>
+        <div class="wrap-item">C</div>
+        <div class="wrap-item">D</div>
+        <div class="wrap-item">E</div>
+        <div class="wrap-item">F</div>
+        <div class="wrap-item">G</div>
+        <div class="wrap-item">H</div>
+      </div>
+      <h3>wrap-reverse</h3>
+      <div class="wrap-reverse">
+        <div class="wrap-item">A</div>
+        <div class="wrap-item">B</div>
+        <div class="wrap-item">C</div>
+        <div class="wrap-item">D</div>
+        <div class="wrap-item">E</div>
+        <div class="wrap-item">F</div>
+        <div class="wrap-item">G</div>
+        <div class="wrap-item">H</div>
+      </div>
+      <h3>
+        NOTE: The flex-flow property is a shorthand property for setting both
+        the flex-direction and flex-wrap properties.
+      </h3>
+      <!-- flex-wrap  -->
+
+      <!-- justify-content  -->
+      <div>
+        <h3 style="text-align: center; color: orange">
+          The properties which distribute space are:
+        </h3>
+        <ul>
+          <li>justify-content: space distribution on the main axis.</li>
+          <li>align-content: space distribution on the cross axis.</li>
+          <li>
+            place-content: a shorthand for setting both of the above properties.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="text-align: center; color: orange">
+          Distributing space on the main axis
+        </h3>
+        <h3 style="font-size: 1.5rem">justify-content:</h3>
+        | flex-start | flex-end | space-between | space-around | space-evenly |
+        center |
+      </div>
+      <h3>flex-start</h3>
+      <div class="flex-start">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="flex-end">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>space-between</h3>
+      <div class="space-between">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>space-around</h3>
+      <div class="space-around">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>space-evenly</h3>
+      <div class="space-evenly">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>center</h3>
+      <div class="center">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+
+      <div>
+        <h2>NOTE</h2>
+        <span
+          >when working with the flex-direction of the container set to column,
+          to create a spare space you need to give your container a height
+          Otherwise you won't have spare space to distribute.</span
+        >
+      </div>
+      <!-- justify-content  -->
+
+      <!-- align-items -->
+      <div>
+        <h3 style="text-align: center; color: orange">
+          Aligns all of the items as a group on the cross axis
+        </h3>
+        <h3 style="font-size: 1.5rem">align-items:</h3>
+        | flex-start | flex-end | stretch | baseline | center |
+      </div>
+      <h3>flex-start</h3>
+      <div class="flex-start-align">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="flex-end-align">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>stretch</h3>
+      <div class="stretch-align">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>baseline</h3>
+      <div class="baseline-align">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+      <h3>center</h3>
+      <div class="center-align">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+      </div>
+
+      <!-- align-items -->
+
+      <div>
+        <h3 style="text-align: center; color: orange">
+          Space distribution on the cross axis
+        </h3>
+        <h3 style="font-size: 1.5rem">align-content:</h3>
+        | stretch | flex-start | flex-end | space-between | space-around |
+        space-evenly | center |
+      </div>
+      <!-- align-content -->
+      <h3>stretch</h3>
+      <div class="stretch-align-content">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+        <div class="list-item">G</div>
+        <div class="list-item">H</div>
+        <div class="list-item">I</div>
+        <div class="list-item">J</div>
+        <div class="list-item">K</div>
+      </div>
+      <h3>flex-start</h3>
+      <div class="flex-start-align-content">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+        <div class="list-item">G</div>
+        <div class="list-item">H</div>
+        <div class="list-item">I</div>
+        <div class="list-item">J</div>
+        <div class="list-item">K</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="flex-end-align-content">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+        <div class="list-item">G</div>
+        <div class="list-item">H</div>
+        <div class="list-item">I</div>
+        <div class="list-item">J</div>
+        <div class="list-item">K</div>
+      </div>
+      <h3>space-between</h3>
+      <div class="space-between-align-content">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+        <div class="list-item">G</div>
+        <div class="list-item">H</div>
+        <div class="list-item">I</div>
+        <div class="list-item">J</div>
+        <div class="list-item">K</div>
+      </div>
+      <h3>space-around</h3>
+      <div class="space-around-align-content">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+        <div class="list-item">G</div>
+        <div class="list-item">H</div>
+        <div class="list-item">I</div>
+        <div class="list-item">J</div>
+        <div class="list-item">K</div>
+      </div>
+      <h3>center</h3>
+      <div class="center-align-content">
+        <div class="list-item">A</div>
+        <div class="list-item">B</div>
+        <div class="list-item">C</div>
+        <div class="list-item">D</div>
+        <div class="list-item">E</div>
+        <div class="list-item">F</div>
+        <div class="list-item">G</div>
+      </div>
+      <!-- align-content -->
+      <div>
+        <h3 style="font-size: 1.5rem">place-content:</h3>
+        The place-content is a shorthand for both justify-content and
+        align-content
+      </div>
+
+      <div>
+        <h3 style="text-align: center; color: orange">
+          The properties used for alignment in flexbox:
+        </h3>
+        <ul>
+          <li>align-self: aligns a single item on the cross axis</li>
+          <li>
+            align-items: aligns all of the items as a group on the cross axis
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>NOTE</h2>
+        <span>
+          If you are working on the main axis then the properties begin with
+          justify-. On the cross axis they begin with align-.</span
+        >
+      </div>
+
+      <h1>FLEX ITEMS</h1>
+      <h3>Order Items</h3>
+      <div class="order-container">
+        <div class="order-item1">1</div>
+        <div class="order-item2">2</div>
+        <div class="order-item3">3</div>
+        <div class="order-item4">4</div>
+        <div class="order-item5">5</div>
+        <div class="order-item6">6</div>
+      </div>
+      <h3>Flex Grow</h3>
+      <div class="flex-grow-container">
+        <div class="grow-item1">1</div>
+        <div class="grow-item2">2</div>
+        <div class="grow-item3">3</div>
+        <div class="grow-item4">4</div>
+      </div>
+      <h3>Flex Shrink</h3>
+      <div class="flex-shrink-container">
+        <div class="flex-shrink-item1">A</div>
+        <div class="flex-shrink-item2">B</div>
+        <div class="flex-shrink-item3">C</div>
+        <div class="flex-shrink-item4">D</div>
+      </div>
+      <h3>Flex Basis</h3>
+      <div class="flex-basis-container">
+        <div class="flex-basis-item1">1</div>
+        <div class="flex-basis-item2">2</div>
+        <div class="flex-basis-item3">3</div>
+        <div class="flex-basis-item4">4</div>
+      </div>
+      <h3>Flex</h3>
+      <div class="flex-container">
+        <div class="flex-item1">1</div>
+        <div class="flex-item2">2</div>
+        <div class="flex-item3">3</div>
+        <div class="flex-item4">4</div>
+      </div>
+      <h3>Align-self: aligns a single item on the cross axis</h3>
+      <h3>
+        Align-self: | stretch | flex-start | flex-end | center | baseline |
+      </h3>
+      <div class="align-self-container">
+        <div class="align-self1">1</div>
+        <div class="align-self2">2</div>
+        <div class="align-self3">3</div>
+        <div class="align-self4">4</div>
+        <!-- <div class="align-self5">5</div> -->
+      </div>
+      <!-- Centering an element -->
+      <div>
+        <h2>Centering Element Vertically and Horizontally</h2>
+        <h3>
+          To make a perfect centering of element, you need to set display
+          property to flex followed by justify-content and align-items to center
+        </h3>
+        <h3>See illustration below</h3>
+        <div class="center-container">
+          <div></div>
+        </div>
+      </div>
+
+      <!-- Centering an element -->
+    </div>
+  </body>
+</html>
