@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-container{
+  background-color: rgb(180, 176, 176);
+  color: #fff;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+
+}
+.nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.list-item:hover{
+  border-bottom: 1px solid #fff;
+}
+.fa-bars{
+  display: none;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .list-item{
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+  }
+}

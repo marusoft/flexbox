@@ -99,6 +99,9 @@
 .flex-basis3 {
   flex-basis: 300px;
 }
+.flex-basis4{
+  flex-basis: 500px;
+}
 .flex-basis6 {
   flex-basis: 200px;
 }
@@ -116,13 +119,13 @@
   font-size: 1.5rem;
 }
 .flex-a {
-  flex: 50%;
+  flex: 4.5;
 }
 .flex-b {
-  flex: 20%;
+  flex: 4.5;
 }
 .flex-d {
-  flex: 30%;
+  flex: 3;
 }
 
 .alignself-container {
@@ -148,6 +151,7 @@
 .alignself-c {
   align-self: center;
 }
+/* default value */
 .alignself-d {
   align-self: stretch;
 }

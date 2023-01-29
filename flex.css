@@ -292,6 +292,7 @@
 }
 /* align-content */
 
+/* order css rule set */
 .order-container {
   display: flex;
   gap: 1rem;
@@ -323,6 +324,7 @@
 .order-item6 {
   order: 2;
 }
+/* order css rule set */
 .flex-grow-container {
   display: flex;
   flex-wrap: wrap;
@@ -360,7 +362,7 @@
   color: #ffffff;
   font-size: 1.5rem;
   /* margin-right: 1rem; */
-  width: 200px;
+  /* width: 200px; */
 }
 .flex-shrink-item1 {
   flex-shrink: 5;
