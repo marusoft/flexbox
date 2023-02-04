@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+.container {
+  display: flex;
+}
+.left-container {
+  /* background-color: orange; */
+  padding: 1rem;
+}
+.right-container {
+  /* background-color: dodgerblue; */
+  padding: 1rem;
+}
+hr{
+  
+  font-size: 30px;
+  border: 1px solid green;
+}
+
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column;
+  }
+}

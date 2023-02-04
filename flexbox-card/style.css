@@ -24,6 +24,9 @@
 h2 {
   margin: 0.4rem 0rem;
 }
+p{
+  max-width: 200px;
+}
 
 @media (max-width: 380px) {
   .wrapper{
