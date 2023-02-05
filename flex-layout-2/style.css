@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+}
+.left-wrapper{
+  padding: 1rem;
+  flex: 50%;
+  background-color: dodgerblue;
+  color: #fff;
+}
+.right-wrapper{
+  padding: 1rem;
+  flex: 50%;
+  background-color: orange;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+}

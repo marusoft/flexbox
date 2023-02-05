@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card-wrapper {
+ 
+}
+h2{
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0rem .4rem;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;padding: 1rem;
+}
+p{
+  max-width: 200px;
+}
+
+@media (max-width: 238px) {
+  .card-wrapper{
+    margin: .7rem;
+  }
+}
