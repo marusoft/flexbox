@@ -11,33 +11,48 @@ header {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
-.logo {
-  width: 36px;
-}
-.logo-text {
-  font-size: 2rem;
+header h3 {
+  font-size: 1.7rem;
 }
 .container {
   display: flex;
   justify-content: space-evenly;
 }
-.btn-login {
-  background: #053582;
-  color: #fff;
-  border: none;
-  padding: 13px 23px;
-  border-radius: 10px;
-}
-.left-container{
-  padding: 2rem;
+.left-container {
   text-align: center;
+  padding: 20px;
 }
-.right-container{
-  padding: 2rem;
+.left-container h2 {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0.7rem;
+}
+.left-container p {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0.4rem;
+  color: #000000;
+  opacity: 0.4;
+}
+.btn-register {
+  background: #053582;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 13px 23px;
+  margin-top: 0.4rem;
+}
+.right-container {
+  padding: 20px;
 }
 .form-wrapper {
   background: #ffffff;
+  box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+  border-radius: 20px;
   padding: 30px;
+}
+.progress-bar {
+  width: 100%;
 }
