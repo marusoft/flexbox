@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   height: 100vh;
 }
 .container {
@@ -11,20 +11,21 @@ body{
 }
 .left-container {
   /* background-color: orange; */
+  flex: 1;
   padding: 1rem;
 }
 .right-container {
   /* background-color: dodgerblue; */
+  flex: 1;
   padding: 1rem;
 }
-hr{
-  
+hr {
   font-size: 30px;
   border: 1px solid green;
 }
 
 @media (max-width: 768px) {
-  .container{
+  .container {
     flex-direction: column;
   }
 }

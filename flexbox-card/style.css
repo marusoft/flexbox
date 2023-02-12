@@ -28,6 +28,18 @@ p{
   max-width: 200px;
 }
 
+.card-footer{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-amazon{
+  margin-right: .4rem;
+}
+.fa{
+  color: blue;
+}
+
 @media (max-width: 380px) {
   .wrapper{
     margin: 1rem;

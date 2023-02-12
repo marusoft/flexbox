@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* height: 100vh; */
+}
+img{
+  max-width: 96vh;
+  height: 100%;
+}
+.container {
+  display: flex;
+}
+.left-container{
+  flex: 30%;
+  /* padding: 2rem; */
+  /* background-color: dodgerblue; */
+}
+.right-container{
+  flex: 70%;
+  padding: 2rem;
+  /* background-color: orange; */
+}
+
+.input-container{
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column;
+  }
+}
