@@ -28,6 +28,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 label {
   font-size: 1.6rem;
@@ -39,11 +40,12 @@ input {
 .password-input {
   position: relative;
 }
-.fa-eye {
+.fa-eye-slash {
   position: absolute;
-  top: 250px;
-  right: 430px;
+  top: 65px;
+  right: 15px;
   cursor: pointer;
+  opacity: .7;
 }
 .forgot {
   font-size: 1.3rem;
