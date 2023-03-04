@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.header {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  padding: 3rem;
+  align-items: center;
+  /* margin-top: 2rem; */
+}
+.logo {
+  font-size: 2.5rem;
+  font-family: "Mynerve", cursive;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-list-item {
+  /* font-size: 1.2rem; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.fa-bars {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-chevron-circle-down{
+  margin-left: .3rem;
+}
+
+button.sell {
+  background-color: rebeccapurple;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-info {
+  display: flex;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 3rem;
+}
+.form-container {
+  flex: 1;
+  padding: 1rem;
+  /* background-color: rebeccapurple; */
+}
+.text-container {
+  flex: 1;
+  /* background-color: dodgerblue; */
+  padding: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .header {
+    padding: 1.5rem;
+  }
+  .account-info{
+    flex-direction: column;
+  }
+}
+
